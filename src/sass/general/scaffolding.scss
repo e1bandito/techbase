@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   line-height: 1.2;
   background-color: $white;
+  overflow: hidden;
 }
 
 img {
@@ -51,8 +52,8 @@ a {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 45px;
+  padding-right: 45px;
 
   @include max($xl) {
     padding-left: 30px;

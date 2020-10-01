@@ -4,9 +4,13 @@ $white: #ffffff;
 $text-black: #292933;
 $text-grey: rgba(#292933, 0.8);
 $btn-shadow: 0px 0px 5px rgba(160, 160, 160, 0.9);
-$btn-shadow-outline: 0px 0px 15px #D6D6D6;
-$border-grey: #C7C7C7;
-$green: #3CD679;
+$btn-shadow-outline: 0px 0px 15px #d6d6d6;
+$btn-shadow-outline-hover: 0px 0px 15px #f4a789;
+$btn-gradient: linear-gradient(180deg, #f6ad8d 0%, #f1ad8f 0.01%, rgba(247, 112, 70, 0.71) 100%);
+$btn-gradient-hover: linear-gradient(180deg, rgba(247, 112, 70, 0.71)  0%, #f1ad8f 99.01%, #f6ad8d 100%);
+$btn-text-outline: #848484;
+$border-grey: #c7c7c7;
+$green: #3cd679;
 
 $xs: 320;
 $sm: 576;

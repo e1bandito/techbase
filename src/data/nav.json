@@ -1,14 +1,22 @@
 [
   {
-    "path": "index.html",
-    "title": "main"
+    "path": "#",
+    "title": "Почему Teachbase"
   },
   {
-    "path": "page2.html",
-    "title": "page2"
+    "path": "#",
+    "title": "Решения"
   },
   {
-    "path": "page3.html",
-    "title": "page3"
+    "path": "#",
+    "title": "Тарифы"
+  },
+  {
+    "path": "#",
+    "title": "Журнал"
+  },
+  {
+    "path": "#",
+    "title": "Библиотека курсов"
   }
 ]
