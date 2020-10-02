@@ -1,0 +1,13 @@
++b.SECTION.book
+  .container
+    +e.inner
+      +e.img
+        +picture('book-img', 'Как запустить онлайн-обучение', 'png')
+        +picture('book-img-bottom', 'Как запустить онлайн-обучение', 'png')
+      +e.info
+        +e.H2.title Онлайн-книга «Как запустить онлайн-обучение»
+        +e.P.text Мы подготовили и собрали в одном месте набор советов об эффективном запуске обучения для ваших сотрудников. Оставьте email, пришлем вам ее на почту.
+        +e.FORM.form(method="POST")
+          +e.LABEL.label
+            +e.INPUT.field(type="email" name="email")
+          +btn('Скачать', 'submit', 'btn--book')
