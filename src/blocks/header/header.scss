@@ -26,7 +26,7 @@
   align-items: center;
 
   @include max(1300) {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
@@ -41,6 +41,7 @@
     justify-content: flex-start;
     padding: 85px 20px 50px;
     background-color: $white;
+    z-index: 4;
 
     &--open {
       animation: open-nav 0.5s ease-in-out forwards;
@@ -84,6 +85,7 @@
   margin-right: 17px;
   margin-left: 23px;
   color: $black;
+  transition: color 0.3s;
 
   @include max(1300) {
     margin-left: 0;
