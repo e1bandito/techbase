@@ -21,6 +21,7 @@ const getData = require('jade-get-data')('src/data');
 const svgSymbols = require('gulp-svg-symbols');
 const gulpIf = require('gulp-if');
 const argv = require('yargs').argv;
+const ghPages = require('gulp-gh-pages');
 
 
 const isDev = true;
@@ -145,6 +146,11 @@ gulp.task("sprite", () => {
 // Очиска build
 gulp.task('clean', () => {
   return del('build');
+});
+
+gulp.task('ghPages', function() {
+  return gulp.src('build/**/*')
+    .pipe(ghPages());
 });
 
 // Копирование в build

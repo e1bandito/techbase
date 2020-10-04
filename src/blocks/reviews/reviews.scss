@@ -98,6 +98,10 @@
   opacity: 0.6;
   transition: opacity 0.3s;
 
+  & img {
+    display: block;
+  }
+
   &:hover {
     opacity: 1;
   }
