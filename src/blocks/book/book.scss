@@ -16,8 +16,11 @@
   }
 
   & .btn--book {
-    max-width: 100%;
-    width: 100%;
+
+    @include max($sm) {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -37,6 +40,11 @@
 .book__info {
   max-width: 620px;
   width: 100%;
+  padding-top: 46px;
+
+  @include max($sm) {
+    padding-top: 0;
+  }
 }
 
 .book__title {

@@ -1,0 +1,26 @@
+- const reviewsList = getData('company')
+- const reviewsData = getData('reviews')
+
++b.SECTION.reviews
+  .container
+    +e.inner
+      +e.info
+        +e.H2.title
+          +e.SPAN.accent 10 лет
+          +e.SPAN.title-text на рынке онлайн-обучения
+        +e.UL.list
+          each item in reviewsList
+            +e.LI.item
+              +picture(item.img, item.name, 'png')
+      +e.slider
+        +e.BUTTON.slider-btn.--prev(aria-label="prev")
+          +icon('arrow-prev')(width="10", height="20", class="slider__arrow")
+        +e.slider-list
+          each item in reviewsData
+            +e.slider-item
+              +e.slider-inner
+                +e.P.text= item.text
+                +e.P.name= item.name
+                +e.P.company= item.company
+        +e.BUTTON.slider-btn.--next(aria-label="next")
+          +icon('arrow-next')(width="10", height="20", class="slider__arrow")
